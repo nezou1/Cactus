@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="cactus.css">
+    <link rel="shortcut icon" href="images/logoCactus.png"/>
     <title>Cactus home</title>
 </head>
 
@@ -12,152 +13,255 @@
     <script src="menu.js"></script>
     <header>
         <nav>
-            <img class="menu-icon" src="images/icons8-menu-50 (1).png" alt="" width="30px" height="30px">
-            <button class="menu-boutton" onclick="toggleMenu()"> Menu</button>
-            <div class="menu-container" id="menuContainer">
-                <img class="logo-menu" src="images/cactusLogo.png" alt="" width="150px" height="60px">
-                <ul class="menu">
-                    <li><a href="cactus.html">Home</a></li>
-                    <li><a href="cactus.html">Rooms</a></li>
-                    <li><a href="cactus.html">Services</a></li>
-                    <li><a href="cactus.html">Location</a></li>
-                    <li><a href="cactus.html">Contact</a></li>
-                    <li><a href="cactus.html">News</a></li>
-                    <li><a href="cactus.html">Gallery</a></li>   
-                </ul>
-            </div>
+            <div class="nav">
+                <div>
+                    <img class="menu-icon" src="images/icons8-menu-50 (1).png" alt="" width="30px" height="30px">
+                    <button class="menu-boutton" onclick="toggleMenu()"> Menu</button>
+                    <div class="menu-container" id="menuContainer">
+                        <div class="container-logomenu">
+                            <img class="logo-menu" src="images/cactusLogo.png" alt="" width="150px" height="60px">
+                        </div>
+                        <ul class="menu">
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#rooms">Rooms</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#location">Location</a></li>
+                            <li><a href="#footer">Contact</a></li>
+                            <li><a href="#review">Review</a></li>
+                            <li><a href="#Home">Gallery</a></li>   
+                        </ul>
+                    </div>
+                </div>
 
-            <img class="logo" src="images/cactusLogo.png" alt="" width="150px" height="60px">
-            <button class="bouttonreserv">
-                <a href="reserve.html">Reserve</a>
-            </button>
+                <img class="logo" src="images/cactusLogo.png" alt="" width="150px" height="60px">
+                <button class="bouttonreserv">
+                <a href="booking.html">Reserve</a>
+                </button>
+            </div>
         </nav>
     </header>
 
-    <div class="container ">
-        <div class="block1 pt-4 pb-4 ">
 
-            <img class="devanture" src="164260582.jpg" alt="" >
+    <div class="container " id="Home">
+        <div class="block1 pt-4 pb-4 ">
+            <div class="slideshow-container slideshow-principal">
+                <!-- Images du diaporama -->
+                <div class="mySlides">
+                    <img src="164260582.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                    <img src="images/jolie-femme-reception-regardant-camera_23-2148033349.jpg" style="width:100%">
+                </div>
+            </div> 
+        
+            <script src="script.js"></script>
 
             <div class="intro">
                         
-                <h2 class="ecriture pb-2 ms-5" > Cactus - Votre Refuge pour les JO 2024 </h2>
+                <h2 class="titre1 ecriture" > Cactus - Your Sanctuary for the 2024 Olympics! </h2>
         
-                <p class="ms-5" >
-                    Nous sommes enchantés de vous accueillir lors des Jeux Olympiques 2024 ! <br>
-                    À Cactus, nous sommes déterminés à rendre votre séjour inoubliable. Profitez d'un mélange unique de confort raffiné <br>
-                    et d'une hospitalité exceptionnelle, offrant un sanctuaire paisible après une journée passionnante aux JO2024. <br>
-                    Bienvenue chez vous, loin de chez vous.
+                <p class="paragraphe" >
+                    We are delighted to welcome you to the 2024 Olympic Games! <br>At Cactus, 
+                    we are committed to making your stay unforgettable. Enjoy a unique blend of refined <br>
+                    comfort and exceptional hospitality, providing a peaceful sanctuary after an <br>
+                    exciting day at the 2024 Olympics. Explore our website to discover our services, ranging from <br>
+                    comfortable standard rooms to a unique themed space, illustrating our commitment to providing <br>
+                    a memorable stay. Welcome to your home away from home.
     
                 </p>
             </div>
 
     
         </div>
-    
-        <div class="row ">
-    
-           
-            <div class=" block2 mt-3 col-4  ">
-    
-                <h6  class="pt-4  ms-1 text-info-emphasis"> Rooms </h6>
-                <h4  class="ecriture2 ms-1" ><b>Chambres simples </b></h4>
-                <h6  class="ms-3 text-body-tertiary">Nov 12 </h6>
-                <h6  class="ms-3 text-info-emphasis fs-6 ">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                elit, sed do eiusmod tempor magna aliqua.</h6>
-                <h6  class="pt-4 pb-1 ms-1">Continuez a lire</h6>
-                
-            </div>
-    
-            <div class="block3 mt-3 col-2 me-3">
-    
-                <img class="chambre" src="280af3cad460f24356808c717dd32539.jpg" alt="" height="200" width="200">
-    
-            </div>
-           
-    
+        <div class="restau-news ">
     
             
-            <div class="block4 col mt-3 ">
-            
-                <h6 class="pt-4 ms-3 " ><p>Rooms</p></h6>
-                <h4  class="ecriture2 ms-3" ><b>Chambres speciales </b></h4>
-                <h6  class="ms-3 text-body-tertiary">Nov 11 </h6>
-                <h6  class="ms-3 text-info-emphasis fs-6 ">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                elit, sed do eiusmod tempor magna aliqua.</h6>
-                <h6  class="pt-4 pb-1 ms-3">Continuez a lire</h6>
-                
-            </div>
+            <div class=" blocks block2 mt-3 col-4  " id="services">
     
-            <div class="block3 mt-3 col-2 me-1">
-    
-                <img class="chambrespe" src="chambrespecial.png" alt="" height="200" width="250" >
-    
-            </div>
-        
-        </div>
-    
-    
-    
-        <div class="block1 pt-4 pb-4 ">
-    
-            <h1 class="ecriture pt-5 pb-2 ms-5" ><b> Location</b></h1>
-    
-            <p class="ms-5" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, </br>
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </br>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </br>aliquip ex ea commodo consequat. 
-            </p>
-    
-            <p class="ms-5">Continuez a lire...</p>
-    
-        </div>
-    
-        <div class="row ">
-    
-            
-            <div class=" block2 mt-3 col-4  ">
-    
-                <h6  class="pt-4  ms-1 text-info-emphasis"> Services </h6>
+                <h6  class="pt-4"> Services </h6>
                 <h4  class="ecriture2 ms-1" ><b>Restauration </b></h4>
-                <h6  class="ms-3 text-body-tertiary">Nov 12 </h6>
-                <h6  class="ms-3 text-info-emphasis fs-6 ">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                elit, sed do eiusmod tempor magna aliqua.</h6>
-                <h6  class="pt-4 pb-1 ms-1">Continuez a lire</h6>
+                <h6  class="ms-3  fs-6 ">The hotel 'Le Cactus' offers a simple and warm culinary experience, <br>
+                    showcasing carefully prepared delicious dishes. The menus reflect the friendly atmosphere of the establishment, <br>
+                    providing an authentic and flavorful breakfast.</h6>
                 
-            </div>
-    
-            <div class="block3 mt-3 col-2 me-3">
-    
-                <img src="" alt="">
-    
             </div>
         
     
     
             
-            <div class="block4 col mt-3">
+            <div class=" blocks block4 col mt-3">
             
-                <h6 class="pt-4 ms-3 " ><p>Services</p></h6>
-                <h4  class="ecriture2 ms-3" ><b> News </b></h4>
-                <h6  class="ms-3 text-body-tertiary">Nov 11 </h6>
-                <h6  class="ms-3 text-info-emphasis fs-6 ">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                elit, sed do eiusmod tempor magna aliqua.</h6>
-                <h6  class="pt-4 pb-1 ms-3">Continuez a lire</h6>
+                <h6 class="pt-4" ><p>Services</p></h6>
+                <h4  class="ecriture2 ms-1" ><b> JO 2024 </b></h4>
+                <h6  class="ms-3  fs-6 ">Ideally located just a short walk from the Stade de France, <br>
+                    our hotel provides easy access to sporting events. Enjoy the excitement of the happenings <br>
+                    while returning to a tranquil haven. An unforgettable experience combining proximity and <br>
+                    exceptional comfort..</h6>
                 
             </div>
+        </div>
+
+        <h2 class="titre1 ecriture" > Rooms </h2>
     
-            <div class="block3 mt-3 col-2 me-1">
+        <div class="chambres" id="rooms">
+
+            <div class="chambre-simple">
+                <div class="text-simple" >
+                    <h4  class= ><b>Standard room </b></h4>
+                    <br>
+                    <h6  class=>
+                        Succumb to the simplicity and comfort of our standard rooms,<br> perfect for a relaxing and stress-free stay.
+                        We're proud to provide clean, <br>comfortable accommodations prioritizing your well-being. <br> <br>
+                        Each room is thoughtfully arranged to be a sanctuary after exploring or attending <br> Olympic events.
+                        Committed to environmental sustainability,<br>our rooms are not just comfortable but eco-friendly, <br>
+                        reflecting ongoing ecological efforts. <br>
+                        <br>
+                        <b>Your satisfaction is our priority</b></h6>
+                    <!-- <h6  class=>Continuez a lire</h6>      -->
+                </div>
+        
+                <div class="img-simple">
+        
+                    <div class="slideshow-container">
+                        <!-- Images du diaporama -->
+                        <div class="mySlides">
+                            <img src="280af3cad460f24356808c717dd32539.jpg" style="width:100%; max-height: 390px;">
+                        </div>
+                        
+                        <div class="mySlides">
+                            <img src="images/salledebainpv.jpeg" style="width:100%;max-height: 390px;">
+                        </div>
+                    </div>
+
+                    
+                
+                    <!-- Points de navigation-->
+                    <div class="dot-container" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+        
+                </div>
+            </div>
+
+
+            
+            <div class="chambre-speciale">
+                <div class="img-speciale">
+        
+                    <div class="slideshow-container">
+                        <!-- Images du diaporama -->
+                        <div class="mySlides">
+                            <img src="280af3cad460f24356808c717dd32539.jpg" style="width:100%;max-height: 390px;">
+                        </div>
+                        
+                        <div class="mySlides">
+                            <img src="images/jolie-femme-reception-regardant-camera_23-2148033349.jpg" style="width:100%">
+                        </div>
+                    </div>
+                
+                    <!-- Points de navigation-->
+                    <div class="dot-container" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+        
+                </div>
+                
+                <div class="text-speciale" >
+                    <h4  class= ><b>The May-Treanor Room - A Unique Olympic Experience</b></h4>
+                    <br>
+                    <h6  class=>Step into the extraordinary with our specially designed room, <br>
+                        "The May-Treanor Room," a testament to our commitment to creating <br> unique and memorable experiences.
+                        Named after the legendary athlete, <br> Misty May-Treanor, this room is a celebration of her achievements in beach volleyball. <br>
+                        <br>
+                        From beach-inspired aesthetics every element is selected to transport you into <br> the world of this Olympic icon. <br>
+                        By choosing "The May-Treanor Room," you not only enjoy a one-of-a-kind stay but also become an integral part of a distinctive Olympic narrative. <br><br>
+                        <b>Elevate your experience with us and make your stay truly unforgettable.</b></h6>
+                </div>
+            </div>
+        </div>   
+        
+        
+
+        <div class="learnmore">
+
+            <h2 class="titre1 ecriture">About our rooms</h2>
+
+            <p class="paragraphe">
+                If you'd like to learn more about our rooms and explore the details that make each stay unique, <br>
+                    feel free to click the button below. Immerse yourself in an experience of comfort and simplicity.<br>
+            </p>
+            
+            <a class="buttonlearn" href="chambres.html">Learn more</a>
+
+        </div>
+        
+        <hr>
+       
     
-                <img src="" alt="">
-    
+
+
+        <h2 class="titre1 ecriture" style="text-align: center;">Review & Location</h2>
+        <div class="avis-container" id="review">
+            
+            <div class="avis">
+                <img src="images/profil1.jpg" alt="Photo de profil">
+                <br>
+                <p>Excellent welcome, very satisfied with my stay. Quality is at the forefront!</p>
+                <p class="auteur">- Jean Dupont</p>
+                <div class="etoiles">★★★★★</div>
             </div>
     
-    </div>
+            <div class="avis">
+                <img src="images/profil2.jpg" alt="Photo de profil">
+                <br>
+                <p>Exceptional customer service, quick response, and effective solutions to my issues.</p>
+                <p class="auteur">- Marie Martin</p>
+                <div class="etoiles">★★★★☆</div>
+            </div>
+    
+            <div class="avis">
+                <img src="images/profil3.jpeg" alt="Photo de profil">
+                <br>
+                <p>I wholeheartedly recommend this simple and friendly hotel!</p>
+                <p class="auteur">- Nicolas Lambert</p>
+                <div class="etoiles">★★★★★</div>
+            </div>
+    
+            <div class="avis">
+                <img src="images/profil4.jpeg" alt="Photo de profil">
+                <br>
+                <p>Very good value for money. Completely satisfied.</p>
+                <p class="auteur">- Sophie Leroux</p>
+                <div class="etoiles">★★★★☆</div>
+            </div>
+            <div class="avis">
+                <img src="images/profil5.jpg" alt="Photo de profil">
+                <br>
+                <p>Pleasant stay, welcoming and warm staff.</p>
+                <p class="auteur">- Younes Yahya</p>
+                <div class="etoiles">★★★☆☆</div>
+            </div>
+    
+            <div class="avis">
+                <img src="images/profil6.jpeg" alt="Photo de profil">
+                <br>
+                <p>Completely satisfied with my stay. I will go back 😄.</p>
+                <p class="auteur">- Nezha El Fayez</p>
+                <div class="etoiles">★★★★☆</div>
+            </div>
+        </div>
+        
+        <div class="location" id="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10482.069486738817!2d2.3570706!3d48.9436337!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66935902fa0cd%3A0x61e061d253aa9523!2sLe%20Palmier!5e0!3m2!1sfr!2sfr!4v1701596956884!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     
     <hr>
-    <footer>
+    <footer id="footer">
         <div class="container">
-            <div class="row">
+            <div class="footer">
                 <div class="col-4">
                     <h5 class="pt-5 ms-5">Entreprise</h5>
                     <h6 class="ms-5">Carriere</h6>
