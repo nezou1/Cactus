@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="shortcut icon" href="images/logoCactus.png" />
+    <link rel="stylesheet" href="menu.js">
+    <link rel="stylesheet" href="cactus.css">
+    <title>Booking</title>
+</head>
+
+<body>
+    <script src="menu.js"></script>
+    <header>
+        <nav>
+            <div class="nav">
+                <div>
+                    <img class="menu-icon" src="images/icons8-menu-50 (1).png" alt="" width="30px" height="30px">
+                    <button class="menu-boutton" onclick="toggleMenu()"> Menu</button>
+                    <div class="menu-container" id="menuContainer">
+                        <div class="container-logomenu">
+                            <img class="logo-menu" src="images/cactusLogo.png" alt="" width="150px" height="60px">
+                        </div>
+                        <ul class="menu">
+                            <li><a href="cactus.html">Home</a></li>
+                            <li><a href="#rooms">Rooms</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#location">Location</a></li>
+                            <li><a href="#footer">Contact</a></li>
+                            <li><a href="#review">Review</a></li>
+                            <li><a href="#Home">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <img class="logo" src="images/cactusLogo.png" alt="" width="150px" height="60px">
+                <button class="bouttonreserv">
+                    <a href="cactus.html">Return</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="reservation-container">
+            <h2>Book your stay</h2>
+            <form>
+                <fieldset>
+                    <legend>contact information</legend>
+                    <label for="name">Last Name :</label>
+                    <input type="text" id="name" name="name" placeholder="Your Last Name" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                    <label for="telephone">Phone :</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Your phone number" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>General information</legend>
+                    <div class="guests">
+                        <div id="adults">
+                            <label for="nombreInvites">Adults :</label>
+                            <input type="number" class="guestsInput" name="" placeholder="0"><br>
+                            <i class="fleche"></i>
+                        </div>
+                        <div id="kids">
+                            <label for="nombreInvites">Kids :</label>
+                            <input type="number" name="" class="guestsInput fleche" placeholder="0"><br>
+                            <i class="fleche"></i>
+                        </div>
+                    </div>
+                    <legend>Rooms:</legend>
+                    <input type="number" name="" id="" placeholder="0"><br>
+                    <i class="fleche"></i>
+                    <label for="choix">Choose</label>
+                    <select id="choix" name="choix">
+                        <option value="option1">Classic room</option>
+                        <option value="option2">The May-Trainor's room : special room</option>
+                    </select>
+
+                    <label for="arrival">Arrival date</label>
+                    <input type="date" id="arrival" name="arrival" required>
+
+                    <label for="departure">Departure date</label>
+                    <input type="date" id="departure" name="departure" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment information</legend>
+                    <label for="cardType">Card type</label>
+                    <select id="cardType" name="cardType" required style="background-color:#faefe7 ;">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="amex">American Express</option>
+                    </select>
+
+                    <label for="cardNumber">Card number :</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+
+                    <label for="expiryDate">Expiry date :</label>
+                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+
+                    <label for="cvv">CVV :</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                </fieldset>
+
+                <button type="submit">Book now</button>
+            </form>
+
+            <script>
+                // Ajouter la date d'aujourd'hui et celle du lendemain aux champs de date
+                let today = new Date();
+                let tomorrow = new Date();
+                tomorrow.setDate(today.getDate() + 1);
+
+                document.getElementById('arrival').valueAsDate = today;
+                document.getElementById('departure').valueAsDate = tomorrow;
+            </script>
+        </div>
+
+        <hr>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="col-4">
+                        <h5 class="pt-5 ms-5">Company</h5>
+                        <h6 class="ms-5">Career</h6>
+                        <h6 class="ms-5">Sustainable Development</h6>
+                        <h6 class="ms-5">Terms of Use</h6>
+                    </div>
+                    <div class="col-4">
+                        <h5 class="pt-5 ms-5">Follow us on:</h5>
+                        <h6 class="ms-5">Instagram</h6>
+                        <h6 class="ms-5">Twitter</h6>
+                        <h6 class="ms-5">Whatsapp</h6>
+                    </div>
+                    <div class="col-4">
+                        <h5 class="pt-5 ms-5">About</h5>
+                        <h6 class="ms-5">Contact</h6>
+                        <h6 class="ms-5">Privacy Policy</h6>
+                        <h6 class="ms-5">Terms of Use</h6>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright"> &copy; 2023 - Cactus - All rights reserved </p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+.reservation-container {
+    max-width: 600px;
+    width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #faefe7;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #d2945e;
+}
+
+form {
+    display: grid;
+    grid-gap: 16px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, #choix {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc; 
+    border-radius: 0; 
+    background-color: #faefe7;
+}
+
+select {
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+
+    padding: 10px; 
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select:after {
+    content: '\25BC'; /* Code Unicode pour une flèche vers le bas */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Évite que la flèche interfère avec le clic sur la liste déroulante */
+}
+
+@-moz-document url-prefix() {
+    select::-ms-expand {
+        display: block;
+    }
+
+    select:after {
+        display: none;
+    }
+}
+
+-----------
+
+.container{
+    color : white;
+    background-color: #303030;
+    display : flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.row{
+    display : flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#col-1{
+    float : left;
+    margin-right : 20%;
+}
+
+#col-2{
+    float : middle;
+    margin-right : 20%;
+}
+
+#col-3{
+    float : right;
+    margin-right : 0%;
+}
+
+.copyright{
+    text-align : center;
+}
+
+.guests{
+    display : inline-block;
+    width:100%;
+}
+
+#adults{
+    float:left;
+    width:40%;
+}
+
+#kids{
+    float:right;
+    width:40%;
+}
+
+.guestsInput{
+    padding:5px;
+}
+
+footer{
+    background-color: white;
+    color: black;
+    border-top: 1px solid #e6e6e6;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
